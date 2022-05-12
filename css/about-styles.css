@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #111;
+}
+
+.heading{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+    font-family: 'Roboto', monospace;
+    text-align: center;
+    font-size: 22px;
+    color: #ffab0f;
+}
+
+.links a:hover{
+    color: #78c7ff;
+    padding: 1px;
+}
+
+.intext-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffab0f;
+}
+
+.emphasized-text{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+
+#header {
+    margin-top: 10px;
+}
+
+#navbar ul{
+    display: inline;
+    overflow: auto;
+}
+
+#navbar li{
+    float: right;
+    list-style: none;
+    padding: 10px 10px;
+}
+#navbar li a{
+    padding: 7px 7px;
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+#navbar li a:hover{
+    border-bottom: 2px solid #ffab0f;
+    color: #ffab0f;
+}
+
+#switch-theme{
+    width: 20px;
+    height: 20px;
+    float: right;
+    list-style: none;
+    margin: 10px 10px;
+    background-color: #ffab0f;
+    border: none;
+}
+
+#AboutMe{
+    margin-top: 40px;
+}
+.emphasized-text{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    color: #ffab0f;
+}
+
+#about{
+    width: 500px;
+    margin: auto;
+    color: #ffffff;
+
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+#about a{
+    text-decoration: none;
+    color: #ffab0f;
+}
+
+#about a:hover{
+    color: #ffab0f;
+}
+
+#qualifications-detail-heading{
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+#qualifications-detail{
+    display: none;
+    width: 500px;
+    margin: auto;
+    color: #ffffff;
+
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 525px){
+    #navbar li a{
+        font-size: 10px;
+        padding: 4px;
+        color: #ffab0f;
+    }
+
+    .heading{
+        font-size: 18px;
+    }
+    #about{
+        width: auto;
+        font-size: 16px;
+    }
+    #qualifications-detail{
+        display: block;
+        font-size: 16px;
+        width: auto;
+    }
+}

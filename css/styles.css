@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #111;
+}
+
+.heading{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+    font-family: 'Roboto', monospace;
+    text-align: center;
+    font-size: 22px;
+    color: #ffab0f;
+}
+
+.links a:hover{
+    color: #78c7ff;
+    padding: 1px;
+}
+
+.intext-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffab0f;
+}
+
+.emphasized-text{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+
+.para{
+    width: 70%;
+    margin-left: 1.5%;
+
+    background-color: #ffffff;
+    border: 1px;
+    border-radius: 25px;
+    padding: 10px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    color: #262626;
+}
+
+#header {
+    margin-top: 10px;
+}
+
+#navbar a{
+    padding: 3px;
+    border: 2px;
+
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Roboto', monospace;
+    color: #ffffff;
+    font-size: 20px;
+}
+#navbar a:hover{
+    color: #ffab0f;
+}
+
+#navbar ul{
+    display: inline;
+    overflow: auto;
+}
+
+#navbar li{
+    float: right;
+    list-style: none;
+    padding: 10px 10px;
+}
+#navbar li a{
+    padding: 7px 7px;
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+#navbar li a:hover{
+    border-bottom: 2px solid #ffab0f;
+    color: #ffab0f;
+}
+
+#AboutMe{
+    display: flex;
+
+    width: 390px;
+    margin: auto;
+    margin-top: 10%;
+    
+    color: white;
+}
+#about-hello{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+#about-iam{
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+}
+#about-coder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+#learn-more{
+    display: block;
+    width: 91px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+    padding: 3px;
+    margin-top: 10px;
+}
+#AboutMe a:hover{
+    background-color: white;
+    color: #ffab0f;
+}
+
+#qualifications-heading{
+    font-family: 'Space Mono', monospace;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+#qualifications{
+    display: flex;
+    margin: auto;
+    
+    align-items: center;
+    justify-content: center;
+    max-width: 480px;
+}
+
+#qualifications-detail{
+    margin-top: 40px;
+}
+#qualifications-detail-heading{
+    font-family: 'Space Mono', monospace;
+    text-align: left;
+    margin-left: 1.5%;
+    color: #ffab0f;
+}
+
+.lang{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#works-heading{
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    text-align: center;
+    color: #ffab0f;
+}
+
+.work{
+    display: flex;
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.work-img{
+    height: 140px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.work-link{
+    margin: auto 10px;
+}
+.work-heading{
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    color: #ffab0f;
+}
+.work-para{
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    color: white;
+}
+
+#footer{
+    margin-top: 20px;
+}
+
+#contacts-heading{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+
+    font-family: 'Pacifico', cursive;
+    text-align: right;
+    font-size: 20px;
+    color: #ffab0f;
+}
+
+.contact{
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 525px){
+    #navbar li a{
+        font-size: 10px;
+        padding: 4px;
+        color: #ffab0f;
+    }
+
+    #AboutMe{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #prof-pic{
+        margin: auto;
+        height: 40%;
+        width: 40%;
+    }
+    #about-coder{
+        display: none;
+    }
+    #learn-more{
+        margin: auto;
+    }
+
+    #qualifications{
+        flex-direction: column;
+    }
+    #qualifications-detail{
+        display: none;
+    }
+
+    .work{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        margin: 20px auto;
+    }
+    .work-para{
+        display: none;
+    }
+    .work-img{
+        margin: 0px;
+        margin-top: 10px;
+    }
+}
